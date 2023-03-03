@@ -1,0 +1,43 @@
+.container {
+  width: 80%;
+  margin: 32px auto;
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.button {
+  border: 1px solid #087f5b;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #087f5b;
+}
+.page_link:link,
+.page_link:visited {
+  font-size: 18px;
+  color: #343a40;
+  text-decoration: none;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_link:hover,
+.page_link:active,
+.button.page_link__current {
+  background-color: #087f5b;
+  color: #fff;
+}

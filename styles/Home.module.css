@@ -1,0 +1,74 @@
+.index_container {
+  width: 80%;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: #130f40;
+}
+.features .box_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.features .box_container .box {
+  width: 30%;
+  padding: 3rem 2rem;
+  background: #fff;
+  outline: 0.3rem solid rgba(8, 8, 8, 0.1);
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.features .box_container .box:hover {
+  outline: 0.2rem solid #130f40;
+  outline-offset: 0rem;
+}
+
+.features .box_container .box .title {
+  color: #130f40;
+  margin: 10px 0;
+}
+
+.features .box_container .box .descrip {
+  color: #130f40;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.features .box_container .box .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #130f40;
+  color: #130f40;
+  cursor: pointer;
+  background: none;
+  text-decoration: none;
+}
+
+.features .box_container .box .btn:hover {
+  background: #ff7800;
+  color: #fff;
+}
+@media (max-width: 1250px) and (min-width: 760px) {
+  .features .box_container .box {
+    width: 48%;
+  }
+}
+
+@media (max-width: 759px) {
+  .features .box_container .box {
+    width: 100%;
+  }
+}

@@ -1,0 +1,278 @@
+.index_container {
+  color: aliceblue;
+  margin-bottom: 70px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.header .link {
+  text-decoration: none;
+  color: #130f40;
+}
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #130f40;
+}
+.header .logo i {
+  color: #ff7800;
+}
+
+.header .navbar .link {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: #130f40;
+}
+
+.header .navbar .link:hover {
+  color: #ff7800;
+}
+.header .icons div {
+  padding: 12px 20px;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: #130f40;
+  font-size: 20px;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.header .icons div:hover {
+  background: #ff7800;
+  color: #fff;
+}
+#menu_btn {
+  display: none;
+}
+.header .search_form {
+  position: absolute;
+  top: 110%;
+  right: -100%;
+  width: 24rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.header .search_form.active {
+  right: 2rem;
+  transition: 0.4s linear;
+}
+
+.header .search_form input {
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: #130f40;
+  padding: 0 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.header .search_form label {
+  font-size: 2.2rem;
+  padding-right: 0.5rem;
+  color: #130f40;
+  cursor: pointer;
+}
+
+.header .search_form label:hover {
+  color: #ff7800;
+}
+/* start shoping cart */
+.header .shopping_cart {
+  position: absolute;
+  top: 110%;
+  right: -130%;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 30rem;
+  background: #fff;
+  overflow: auto;
+  min-height: 150px;
+  max-height: 500px;
+}
+
+.header .shopping_cart.active {
+  right: 2rem;
+  transition: 0.4s linear;
+}
+
+.header .shopping_cart .box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.header .shopping_cart .box img {
+  height: 5rem;
+}
+
+.header .shopping_cart .box .fa-trash {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  cursor: pointer;
+  color: #666;
+  transform: translateY(-50%);
+}
+
+.header .shopping_cart .box .fa-trash:hover {
+  color: #ff7800;
+}
+
+.header .shopping_cart .box .content h3 {
+  color: #130f40;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+.header .shopping_cart .box .content span {
+  color: #666;
+  font-size: 1.6rem;
+}
+
+.header .shopping_cart .box .content .quantity {
+  padding-left: 1rem;
+}
+
+.header .shopping_cart .total {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: #130f40;
+}
+
+.header .shopping_cart .checkout {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.header .shopping_cart .checkout .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #130f40;
+  color: #130f40;
+  cursor: pointer;
+  background: none;
+}
+
+.header .shopping_cart .checkout .btn:hover {
+  background: #ff7800;
+  color: #fff;
+}
+/* end shoping cart */
+.header .login_form {
+  position: absolute;
+  top: 110%;
+  right: -130%;
+  width: 27rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.header .login_form.active {
+  right: 2rem;
+  transition: 0.4s linear;
+}
+
+.header .login_form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #130f40;
+}
+
+.header .login_form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #130f40;
+  text-transform: none;
+}
+
+.header .login_form .text {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: #666;
+}
+.header .login_form .err_message {
+  color: red;
+  font-size: 1.4rem;
+}
+.header .login_form .text a {
+  color: #ff7800;
+  text-decoration: underline;
+}
+.header .login_form .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #130f40;
+  color: #130f40;
+  cursor: pointer;
+  background: none;
+}
+
+.header .login_form .btn:hover {
+  background: #ff7800;
+  color: #fff;
+}
+
+@media (max-width: 1250px) {
+  /* start menu */
+  #menu_btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -130%;
+    max-width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+
+  .header .navbar a {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+    padding: 10px 0;
+  }
+  /* end menu */
+}

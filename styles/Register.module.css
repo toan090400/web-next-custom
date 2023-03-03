@@ -1,0 +1,86 @@
+.form_container {
+  margin-top: 85px;
+}
+.form_container .form_login2 {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #fff;
+  text-align: center;
+  width: 500px;
+  margin: 20px auto;
+}
+
+.form_container .form_login2 h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #333;
+}
+.form_container .form_login2 .error {
+  display: flex;
+  margin-left: 20px;
+  font-size: 20px;
+  color: red;
+}
+.form_container .form_login2 input,
+.form_container .form_login2 select {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 17px;
+  margin: 8px 0;
+  background: #eee;
+  border-radius: 5px;
+  border: none;
+}
+
+.form_container .form_login2 select option {
+  background: #fff;
+}
+
+.form_container .form_login2 .form_btn {
+  margin-top: 12px;
+  background: #fbd0d9;
+  color: crimson;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.form_container .form_login2 .form_btn:hover {
+  background: crimson;
+  color: #fff;
+}
+
+.form_container .form_login2 .text {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.form_container .form_login2 .text .link {
+  color: crimson;
+}
+/* start message */
+.form_container .form_login2 .error_msg {
+  margin: 10px 0;
+  display: block;
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+.form_container .form_login2 .success_msg {
+  margin: 10px 0;
+  display: block;
+  background: #00c11b;
+  color: #333;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+/* end message */

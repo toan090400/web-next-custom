@@ -1,0 +1,123 @@
+.form .btn,
+.form .delete_btn {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.form .link {
+  text-decoration: none;
+}
+.form .btn {
+  background-color: #3498db;
+  border: none;
+}
+
+.form .btn:hover {
+  background-color: #2980b9;
+  color: #333;
+}
+
+.form .delete_btn {
+  background-color: #e74c3c;
+}
+
+.form .delete_btn:hover {
+  background-color: #c0392b;
+  color: #333;
+}
+
+.form .error_message {
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 20px;
+}
+.form .success_message {
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #0fa02f;
+  color: rgb(24, 22, 22);
+  font-size: 20px;
+}
+
+.update_profile {
+  min-height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.update_profile .form {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 800px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.update_profile .form .image {
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.update_profile .form .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.update_profile .form .flex .inputBox {
+  width: 49%;
+}
+
+.update_profile .form .flex .inputBox .text {
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 17px;
+  color: #333;
+  font-size: 20px;
+}
+.update_profile .form .flex .inputBox .text .err_message {
+  color: red;
+}
+.update_profile .form .flex .inputBox .box {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 12px 14px;
+  font-size: 17px;
+  color: #333;
+  margin-top: 10px;
+  border: none;
+}
+
+@media (max-width: 650px) {
+  .update_profile .form .flex {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .update_profile .form .flex .inputBox {
+    width: 100%;
+  }
+}
